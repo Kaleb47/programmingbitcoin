@@ -20,8 +20,7 @@ class FieldElement:
         return self.num == other.num and self.prime == other.prime
 
     def __ne__(self, other):
-        # this should be the inverse of the == operator
-        return not (self == other)
+        return not self == other
 
     def __add__(self, other):
         if self.prime != other.prime:
